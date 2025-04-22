@@ -1,0 +1,447 @@
+2025-04-22 14:52:33,204 - image_watcher - INFO - --- Initializing Servo System ---
+2025-04-22 14:52:33,205 - servo_controller - INFO - STUB: Setting up servo motors (simulation mode)
+2025-04-22 14:52:33,205 - image_watcher - INFO - --- Servo Initialization Complete ---
+2025-04-22 14:52:33,205 - image_watcher - INFO - Checking for existing images in simulation/incoming_images
+2025-04-22 14:52:33,205 - image_watcher - INFO - Processed 0 existing images
+2025-04-22 14:52:33,205 - image_watcher - INFO - Setting up file system watcher for simulation/incoming_images
+2025-04-22 14:52:33,206 - image_watcher - INFO - Image watcher started. Press Ctrl+C to stop.
+2025-04-22 14:55:13,986 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145513.jpg
+2025-04-22 14:55:14,989 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145513.jpg
+2025-04-22 14:55:14,989 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145513.jpg
+2025-04-22 14:55:18,066 - image_watcher - INFO - OCR Result lengths - Adaptive: 255, Otsu: 272, Original: 250
+2025-04-22 14:55:18,067 - image_watcher - INFO - Extracted text length: 271
+2025-04-22 14:55:18,067 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL4924852990
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:55:13...
+2025-04-22 14:55:18,067 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:55:18,067 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:55:18,077 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 14:55:39,159 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000262357CECF0>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:55:39,160 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145523.jpg
+2025-04-22 14:55:39,661 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145523.jpg
+2025-04-22 14:55:39,661 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145523.jpg
+2025-04-22 14:55:41,329 - image_watcher - INFO - OCR Result lengths - Adaptive: 278, Otsu: 291, Original: 288
+2025-04-22 14:55:41,330 - image_watcher - INFO - Extracted text length: 290
+2025-04-22 14:55:41,330 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM8224802062
+Status: Failed Delivery Atternpt
+
+LOGO
+
+Date: 202...
+2025-04-22 14:55:41,330 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:55:41,330 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:55:41,331 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 14:56:02,392 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000262357E74D0>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:56:02,392 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145534.jpg
+2025-04-22 14:56:02,894 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145534.jpg
+2025-04-22 14:56:02,894 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145534.jpg
+2025-04-22 14:56:04,418 - image_watcher - INFO - OCR Result lengths - Adaptive: 262, Otsu: 267, Original: 264
+2025-04-22 14:56:04,419 - image_watcher - INFO - Extracted text length: 266
+2025-04-22 14:56:04,419 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM4949459086
+Status: For Pickup
+
+LOGO
+
+Date: 2025-04-22 14:55:...
+2025-04-22 14:56:04,420 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:56:04,420 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:56:04,420 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 14:56:25,454 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000262357E7D90>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:56:25,454 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145544.jpg
+2025-04-22 14:56:25,955 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145544.jpg
+2025-04-22 14:56:25,956 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145544.jpg
+2025-04-22 14:56:27,338 - image_watcher - INFO - OCR Result lengths - Adaptive: 246, Otsu: 273, Original: 256
+2025-04-22 14:56:27,339 - image_watcher - INFO - Extracted text length: 272
+2025-04-22 14:56:27,339 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL1028654881
+Status: For Pickup
+
+LOGO
+
+Date: 2025-04-22 14:55:4...
+2025-04-22 14:56:27,340 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:56:27,340 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:56:27,340 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 14:56:48,394 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002623586A780>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:56:48,394 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145554.jpg
+2025-04-22 14:56:48,896 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145554.jpg
+2025-04-22 14:56:48,896 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145554.jpg
+2025-04-22 14:56:50,360 - image_watcher - INFO - OCR Result lengths - Adaptive: 252, Otsu: 272, Original: 254
+2025-04-22 14:56:50,361 - image_watcher - INFO - Extracted text length: 271
+2025-04-22 14:56:50,361 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL9278176440
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:55:54...
+2025-04-22 14:56:50,361 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:56:50,361 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:56:50,361 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 14:57:11,417 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002623586B100>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:57:11,418 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145604.jpg
+2025-04-22 14:57:11,919 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145604.jpg
+2025-04-22 14:57:11,919 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145604.jpg
+2025-04-22 14:57:13,370 - image_watcher - INFO - OCR Result lengths - Adaptive: 253, Otsu: 286, Original: 265
+2025-04-22 14:57:13,371 - image_watcher - INFO - Extracted text length: 285
+2025-04-22 14:57:13,371 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM8511777688
+Status: Failed Delivery Atternpt
+
+LOGO
+
+Date: 202...
+2025-04-22 14:57:13,371 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:57:13,371 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:57:13,372 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 14:57:34,423 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002623580BBF0>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:57:34,424 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145614.jpg
+2025-04-22 14:57:34,925 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145614.jpg
+2025-04-22 14:57:34,926 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145614.jpg
+2025-04-22 14:57:36,358 - image_watcher - INFO - OCR Result lengths - Adaptive: 266, Otsu: 284, Original: 268
+2025-04-22 14:57:36,359 - image_watcher - INFO - Extracted text length: 283
+2025-04-22 14:57:36,359 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM4808273671
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:56:1...
+2025-04-22 14:57:36,360 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:57:36,360 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:57:36,360 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 14:57:57,416 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000026235885F20>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:57:57,417 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_145624.jpg
+2025-04-22 14:57:57,919 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_145624.jpg
+2025-04-22 14:57:57,921 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145624.jpg
+2025-04-22 14:57:59,613 - image_watcher - INFO - OCR Result lengths - Adaptive: 239, Otsu: 263, Original: 252
+2025-04-22 14:57:59,613 - image_watcher - INFO - Extracted text length: 262
+2025-04-22 14:57:59,613 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: PHL9832378931
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:56:24...
+2025-04-22 14:57:59,614 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 14:57:59,614 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 14:57:59,614 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 14:58:11,106 - image_watcher - INFO - Image watcher stopping...
+2025-04-22 14:58:20,680 - image_watcher - ERROR - Request error when sending to server: HTTPConnectionPool(host='192.168.100.182', port=5000): Max retries exceeded with url: /upload_image (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000026235886690>, 'Connection to 192.168.100.182 timed out. (connect timeout=None)'))
+2025-04-22 14:58:20,681 - image_watcher - INFO - Observer stopped.
+2025-04-22 14:58:20,682 - image_watcher - INFO - Releasing servos...
+2025-04-22 14:58:20,682 - servo_controller - INFO - STUB: Releasing servo motors (simulation mode)
+2025-04-22 14:58:20,683 - image_watcher - INFO - Servos released.
+2025-04-22 14:58:20,683 - image_watcher - INFO - Image watcher shutdown complete.
+2025-04-22 15:00:17,751 - image_watcher - INFO - --- Initializing Servo System ---
+2025-04-22 15:00:17,752 - servo_controller - INFO - STUB: Setting up servo motors (simulation mode)
+2025-04-22 15:00:17,752 - image_watcher - INFO - --- Servo Initialization Complete ---
+2025-04-22 15:00:17,752 - image_watcher - INFO - Checking for existing images in simulation/incoming_images
+2025-04-22 15:00:17,753 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145513.jpg
+2025-04-22 15:00:17,954 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145513.jpg
+2025-04-22 15:00:19,419 - image_watcher - INFO - OCR Result lengths - Adaptive: 255, Otsu: 272, Original: 250
+2025-04-22 15:00:19,420 - image_watcher - INFO - Extracted text length: 271
+2025-04-22 15:00:19,420 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL4924852990
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:55:13...
+2025-04-22 15:00:19,420 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:19,421 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:19,421 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:00:22,098 - image_watcher - INFO - Image sent to server successfully. Result ID: 1
+2025-04-22 15:00:22,099 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145513.jpg
+2025-04-22 15:00:22,101 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145523.jpg
+2025-04-22 15:00:22,302 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145523.jpg
+2025-04-22 15:00:24,133 - image_watcher - INFO - OCR Result lengths - Adaptive: 278, Otsu: 291, Original: 288
+2025-04-22 15:00:24,134 - image_watcher - INFO - Extracted text length: 290
+2025-04-22 15:00:24,134 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM8224802062
+Status: Failed Delivery Atternpt
+
+LOGO
+
+Date: 202...
+2025-04-22 15:00:24,134 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:24,134 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:24,134 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 15:00:26,765 - image_watcher - INFO - Image sent to server successfully. Result ID: 2
+2025-04-22 15:00:26,766 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145523.jpg
+2025-04-22 15:00:26,767 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145534.jpg
+2025-04-22 15:00:26,968 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145534.jpg
+2025-04-22 15:00:28,354 - image_watcher - INFO - OCR Result lengths - Adaptive: 262, Otsu: 267, Original: 264
+2025-04-22 15:00:28,354 - image_watcher - INFO - Extracted text length: 266
+2025-04-22 15:00:28,354 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM4949459086
+Status: For Pickup
+
+LOGO
+
+Date: 2025-04-22 14:55:...
+2025-04-22 15:00:28,355 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:28,355 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:28,355 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:00:31,075 - image_watcher - INFO - Image sent to server successfully. Result ID: 3
+2025-04-22 15:00:31,076 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145534.jpg
+2025-04-22 15:00:31,077 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145544.jpg
+2025-04-22 15:00:31,278 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145544.jpg
+2025-04-22 15:00:33,077 - image_watcher - INFO - OCR Result lengths - Adaptive: 246, Otsu: 273, Original: 256
+2025-04-22 15:00:33,078 - image_watcher - INFO - Extracted text length: 272
+2025-04-22 15:00:33,078 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL1028654881
+Status: For Pickup
+
+LOGO
+
+Date: 2025-04-22 14:55:4...
+2025-04-22 15:00:33,078 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:33,078 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:33,078 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:00:35,967 - image_watcher - INFO - Image sent to server successfully. Result ID: 4
+2025-04-22 15:00:35,978 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145544.jpg
+2025-04-22 15:00:35,980 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145554.jpg
+2025-04-22 15:00:36,182 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145554.jpg
+2025-04-22 15:00:38,282 - image_watcher - INFO - OCR Result lengths - Adaptive: 252, Otsu: 272, Original: 254
+2025-04-22 15:00:38,283 - image_watcher - INFO - Extracted text length: 271
+2025-04-22 15:00:38,283 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL9278176440
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:55:54...
+2025-04-22 15:00:38,284 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:38,284 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:38,284 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:00:41,046 - image_watcher - INFO - Image sent to server successfully. Result ID: 5
+2025-04-22 15:00:41,054 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145554.jpg
+2025-04-22 15:00:41,056 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145604.jpg
+2025-04-22 15:00:41,258 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145604.jpg
+2025-04-22 15:00:42,749 - image_watcher - INFO - OCR Result lengths - Adaptive: 253, Otsu: 286, Original: 265
+2025-04-22 15:00:42,749 - image_watcher - INFO - Extracted text length: 285
+2025-04-22 15:00:42,749 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM8511777688
+Status: Failed Delivery Atternpt
+
+LOGO
+
+Date: 202...
+2025-04-22 15:00:42,750 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:42,750 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:42,750 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:00:45,385 - image_watcher - INFO - Image sent to server successfully. Result ID: 6
+2025-04-22 15:00:45,386 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145604.jpg
+2025-04-22 15:00:45,387 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145614.jpg
+2025-04-22 15:00:45,588 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145614.jpg
+2025-04-22 15:00:47,217 - image_watcher - INFO - OCR Result lengths - Adaptive: 266, Otsu: 284, Original: 268
+2025-04-22 15:00:47,218 - image_watcher - INFO - Extracted text length: 283
+2025-04-22 15:00:47,218 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM4808273671
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:56:1...
+2025-04-22 15:00:47,219 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:47,219 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:47,219 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 15:00:50,106 - image_watcher - INFO - Image sent to server successfully. Result ID: 7
+2025-04-22 15:00:50,108 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145614.jpg
+2025-04-22 15:00:50,109 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145624.jpg
+2025-04-22 15:00:50,310 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145624.jpg
+2025-04-22 15:00:51,935 - image_watcher - INFO - OCR Result lengths - Adaptive: 239, Otsu: 263, Original: 252
+2025-04-22 15:00:51,936 - image_watcher - INFO - Extracted text length: 262
+2025-04-22 15:00:51,936 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: PHL9832378931
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:56:24...
+2025-04-22 15:00:51,937 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:51,937 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:51,937 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:00:54,736 - image_watcher - INFO - Image sent to server successfully. Result ID: 8
+2025-04-22 15:00:54,737 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145624.jpg
+2025-04-22 15:00:54,737 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145634.jpg
+2025-04-22 15:00:54,939 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145634.jpg
+2025-04-22 15:00:56,551 - image_watcher - INFO - OCR Result lengths - Adaptive: 268, Otsu: 285, Original: 271
+2025-04-22 15:00:56,552 - image_watcher - INFO - Extracted text length: 284
+2025-04-22 15:00:56,552 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL1433129937
+Status: In Transit
+
+LOGO
+
+Date: 2025-04-22 14:56:3...
+2025-04-22 15:00:56,552 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:00:56,553 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:00:56,553 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 15:00:59,304 - image_watcher - INFO - Image sent to server successfully. Result ID: 9
+2025-04-22 15:00:59,305 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145634.jpg
+2025-04-22 15:00:59,306 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145644.jpg
+2025-04-22 15:00:59,507 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145644.jpg
+2025-04-22 15:01:01,210 - image_watcher - INFO - OCR Result lengths - Adaptive: 272, Otsu: 285, Original: 273
+2025-04-22 15:01:01,211 - image_watcher - INFO - Extracted text length: 284
+2025-04-22 15:01:01,211 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: PHL6633805087
+Status: In Transit
+
+LOGO
+
+Date: 2025-04-22 14:56:4...
+2025-04-22 15:01:01,212 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:01,212 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:01,212 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 15:01:04,036 - image_watcher - INFO - Image sent to server successfully. Result ID: 10
+2025-04-22 15:01:04,037 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145644.jpg
+2025-04-22 15:01:04,038 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145654.jpg
+2025-04-22 15:01:04,239 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145654.jpg
+2025-04-22 15:01:06,174 - image_watcher - INFO - OCR Result lengths - Adaptive: 254, Otsu: 271, Original: 248
+2025-04-22 15:01:06,175 - image_watcher - INFO - Extracted text length: 270
+2025-04-22 15:01:06,175 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL3095403959
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:56:54...
+2025-04-22 15:01:06,175 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:06,175 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:06,175 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:01:08,775 - image_watcher - INFO - Image sent to server successfully. Result ID: 11
+2025-04-22 15:01:08,776 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145654.jpg
+2025-04-22 15:01:08,777 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145704.jpg
+2025-04-22 15:01:08,978 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145704.jpg
+2025-04-22 15:01:10,566 - image_watcher - INFO - OCR Result lengths - Adaptive: 221, Otsu: 281, Original: 259
+2025-04-22 15:01:10,566 - image_watcher - INFO - Extracted text length: 280
+2025-04-22 15:01:10,567 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: SJDM6442632972
+Status: Out for Delivery
+
+LOGO
+
+Date: 2025-04-22 ...
+2025-04-22 15:01:10,567 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:10,567 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:10,567 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:01:13,202 - image_watcher - INFO - Image sent to server successfully. Result ID: 12
+2025-04-22 15:01:13,203 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145704.jpg
+2025-04-22 15:01:13,203 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145714.jpg
+2025-04-22 15:01:13,404 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145714.jpg
+2025-04-22 15:01:15,162 - image_watcher - INFO - OCR Result lengths - Adaptive: 257, Otsu: 271, Original: 254
+2025-04-22 15:01:15,163 - image_watcher - INFO - Extracted text length: 270
+2025-04-22 15:01:15,163 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL3061400265
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:57:14...
+2025-04-22 15:01:15,164 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:15,164 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:15,164 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:01:17,785 - image_watcher - INFO - Image sent to server successfully. Result ID: 13
+2025-04-22 15:01:17,786 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145714.jpg
+2025-04-22 15:01:17,787 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145724.jpg
+2025-04-22 15:01:17,988 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145724.jpg
+2025-04-22 15:01:19,633 - image_watcher - INFO - OCR Result lengths - Adaptive: 237, Otsu: 265, Original: 253
+2025-04-22 15:01:19,633 - image_watcher - INFO - Extracted text length: 264
+2025-04-22 15:01:19,633 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL2264222092
+Status: For Pickup
+
+LOGO
+
+Date: 2025-04-22 14:57:2...
+2025-04-22 15:01:19,634 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:19,634 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:19,634 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:01:22,252 - image_watcher - INFO - Image sent to server successfully. Result ID: 14
+2025-04-22 15:01:22,253 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145724.jpg
+2025-04-22 15:01:22,255 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145734.jpg
+2025-04-22 15:01:22,456 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145734.jpg
+2025-04-22 15:01:24,040 - image_watcher - INFO - OCR Result lengths - Adaptive: 274, Otsu: 283, Original: 275
+2025-04-22 15:01:24,041 - image_watcher - INFO - Extracted text length: 282
+2025-04-22 15:01:24,041 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BULO960542991
+Status: Failed Delivery Atternpt
+
+LOGO
+
+Date: 2025...
+2025-04-22 15:01:24,041 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:24,042 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:24,042 - servo_controller - INFO - SIMULATION: Would sort to channel 2 for address: Mulawin
+2025-04-22 15:01:26,659 - image_watcher - INFO - Image sent to server successfully. Result ID: 15
+2025-04-22 15:01:26,660 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145734.jpg
+2025-04-22 15:01:26,661 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145744.jpg
+2025-04-22 15:01:26,868 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145744.jpg
+2025-04-22 15:01:28,448 - image_watcher - INFO - OCR Result lengths - Adaptive: 237, Otsu: 269, Original: 248
+2025-04-22 15:01:28,449 - image_watcher - INFO - Extracted text length: 268
+2025-04-22 15:01:28,449 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: PHLO527791976
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 14:57:44...
+2025-04-22 15:01:28,449 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:28,449 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:28,450 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:01:31,260 - image_watcher - INFO - Image sent to server successfully. Result ID: 16
+2025-04-22 15:01:31,263 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145744.jpg
+2025-04-22 15:01:31,264 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145754.jpg
+2025-04-22 15:01:31,466 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145754.jpg
+2025-04-22 15:01:33,041 - image_watcher - INFO - OCR Result lengths - Adaptive: 253, Otsu: 286, Original: 256
+2025-04-22 15:01:33,042 - image_watcher - INFO - Extracted text length: 285
+2025-04-22 15:01:33,042 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL4437327594
+Status: In Transit
+
+LOGO
+
+Date: 2025-04-22 14:57:5...
+2025-04-22 15:01:33,042 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:33,042 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:33,043 - servo_controller - INFO - SIMULATION: Would sort to channel 1 for address: Tungkong Mangga
+2025-04-22 15:01:35,646 - image_watcher - INFO - Image sent to server successfully. Result ID: 17
+2025-04-22 15:01:35,648 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145754.jpg
+2025-04-22 15:01:35,649 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_145804.jpg
+2025-04-22 15:01:35,850 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_145804.jpg
+2025-04-22 15:01:37,380 - image_watcher - INFO - OCR Result lengths - Adaptive: 249, Otsu: 276, Original: 266
+2025-04-22 15:01:37,381 - image_watcher - INFO - Extracted text length: 275
+2025-04-22 15:01:37,381 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL2474582361
+Status: Gut for Delivery
+
+LOGO
+
+Date: 2025-04-22 1...
+2025-04-22 15:01:37,381 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:37,382 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:37,382 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian
+2025-04-22 15:01:40,119 - image_watcher - INFO - Image sent to server successfully. Result ID: 18
+2025-04-22 15:01:40,120 - image_watcher - INFO - Image moved to processed directory: simulation/processed_images\parcel_20250422_145804.jpg
+2025-04-22 15:01:40,121 - image_watcher - INFO - Found existing image: simulation/incoming_images\parcel_20250422_150005.jpg
+2025-04-22 15:01:40,323 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150005.jpg
+2025-04-22 15:01:41,770 - image_watcher - INFO - OCR Result lengths - Adaptive: 239, Otsu: 269, Original: 253
+2025-04-22 15:01:41,771 - image_watcher - INFO - Extracted text length: 268
+2025-04-22 15:01:41,771 - image_watcher - INFO - First 100 chars: PARCEL DELIVERY DETAILS
+Tracking #: BUL1643236426
+Status: Delivered
+
+LOGO
+
+Date: 2025-04-22 15:00:05...
+2025-04-22 15:01:41,772 - image_watcher - INFO - Attempting to trigger servo based on OCR text...
+2025-04-22 15:01:41,772 - servo_controller - INFO - STUB: Would sort parcel based on extracted text
+2025-04-22 15:01:41,772 - servo_controller - INFO - SIMULATION: Would sort to channel 3 for address: Kaypian

@@ -1,0 +1,344 @@
+2025-04-22 14:41:42,690 - flask_ocr_server - ERROR - Database connection error: connection to server at "192.168.100.182", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-04-22 14:41:42,691 - flask_ocr_server - WARNING - Couldn't connect to database to create table
+2025-04-22 14:41:42,692 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:41:43,961 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.23:5000
+2025-04-22 14:41:43,961 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 14:41:43,984 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:42:05,865 - flask_ocr_server - ERROR - Database connection error: connection to server at "192.168.100.182", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-04-22 14:42:05,871 - flask_ocr_server - WARNING - Couldn't connect to database to create table
+2025-04-22 14:42:05,875 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:42:05,906 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:42:05,913 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:43:37,524 - flask_ocr_server - ERROR - Database connection error: connection to server at "192.168.100.23", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.100.23", user "carlo", database "ocr_data", no encryption
+
+2025-04-22 14:43:37,525 - flask_ocr_server - WARNING - Couldn't connect to database to create table
+2025-04-22 14:43:37,526 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:43:38,407 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.23:5000
+2025-04-22 14:43:38,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 14:43:38,426 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:43:39,184 - flask_ocr_server - ERROR - Database connection error: connection to server at "192.168.100.23", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.100.23", user "carlo", database "ocr_data", no encryption
+
+2025-04-22 14:43:39,188 - flask_ocr_server - WARNING - Couldn't connect to database to create table
+2025-04-22 14:43:39,189 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:43:39,217 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:43:39,224 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:47:41,078 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\flask_server.py', reloading
+2025-04-22 14:47:41,168 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:47:42,180 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:47:42,181 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:47:42,211 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:47:42,219 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:47:57,506 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:47:57,508 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:47:58,394 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.23:5000
+2025-04-22 14:47:58,394 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 14:47:58,411 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:47:59,161 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:47:59,163 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:47:59,191 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:47:59,198 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:49:04,499 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:49:04] "[31m[1mGET /upload_image HTTP/1.1[0m" 405 -
+2025-04-22 14:49:05,607 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:49:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 14:50:04,734 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:50:04] "GET / HTTP/1.1" 200 -
+2025-04-22 14:51:41,675 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:51:41,676 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:51:41,676 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:51:42,071 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:51:42,870 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:51:42,871 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:51:42,896 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:51:42,903 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:51:59,116 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\__init__.py', reloading
+2025-04-22 14:51:59,117 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\__init__.py', reloading
+2025-04-22 14:51:59,117 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\__init__.py', reloading
+2025-04-22 14:51:59,118 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_base_connection.py', reloading
+2025-04-22 14:51:59,118 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_base_connection.py', reloading
+2025-04-22 14:51:59,119 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_collections.py', reloading
+2025-04-22 14:51:59,119 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_collections.py', reloading
+2025-04-22 14:51:59,119 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_request_methods.py', reloading
+2025-04-22 14:51:59,120 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_request_methods.py', reloading
+2025-04-22 14:51:59,120 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_version.py', reloading
+2025-04-22 14:51:59,120 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\_version.py', reloading
+2025-04-22 14:51:59,121 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\connection.py', reloading
+2025-04-22 14:51:59,121 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\connection.py', reloading
+2025-04-22 14:51:59,121 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\connectionpool.py', reloading
+2025-04-22 14:51:59,122 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\connectionpool.py', reloading
+2025-04-22 14:51:59,122 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\exceptions.py', reloading
+2025-04-22 14:51:59,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\exceptions.py', reloading
+2025-04-22 14:51:59,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\fields.py', reloading
+2025-04-22 14:51:59,124 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\fields.py', reloading
+2025-04-22 14:51:59,124 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\filepost.py', reloading
+2025-04-22 14:51:59,124 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\filepost.py', reloading
+2025-04-22 14:51:59,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\poolmanager.py', reloading
+2025-04-22 14:51:59,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\poolmanager.py', reloading
+2025-04-22 14:51:59,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\poolmanager.py', reloading
+2025-04-22 14:51:59,126 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\response.py', reloading
+2025-04-22 14:51:59,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\response.py', reloading
+2025-04-22 14:51:59,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\response.py', reloading
+2025-04-22 14:51:59,128 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py', reloading
+2025-04-22 14:51:59,128 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\__init__.py', reloading
+2025-04-22 14:51:59,128 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\__init__.py', reloading
+2025-04-22 14:51:59,129 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py', reloading
+2025-04-22 14:51:59,129 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py', reloading
+2025-04-22 14:51:59,129 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\socks.py', reloading
+2025-04-22 14:51:59,130 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\socks.py', reloading
+2025-04-22 14:51:59,130 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py', reloading
+2025-04-22 14:51:59,131 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py', reloading
+2025-04-22 14:51:59,131 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py', reloading
+2025-04-22 14:51:59,131 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py', reloading
+2025-04-22 14:51:59,132 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py', reloading
+2025-04-22 14:51:59,132 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py', reloading
+2025-04-22 14:51:59,133 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py', reloading
+2025-04-22 14:51:59,133 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py', reloading
+2025-04-22 14:51:59,134 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py', reloading
+2025-04-22 14:51:59,134 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py', reloading
+2025-04-22 14:51:59,134 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py', reloading
+2025-04-22 14:51:59,135 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py', reloading
+2025-04-22 14:51:59,135 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\connection.py', reloading
+2025-04-22 14:51:59,136 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\__init__.py', reloading
+2025-04-22 14:51:59,136 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\__init__.py', reloading
+2025-04-22 14:51:59,136 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\__init__.py', reloading
+2025-04-22 14:51:59,136 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\connection.py', reloading
+2025-04-22 14:51:59,137 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\connection.py', reloading
+2025-04-22 14:51:59,137 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\probe.py', reloading
+2025-04-22 14:51:59,138 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\http2\\probe.py', reloading
+2025-04-22 14:51:59,138 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\connection.py', reloading
+2025-04-22 14:51:59,138 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\__init__.py', reloading
+2025-04-22 14:51:59,139 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\__init__.py', reloading
+2025-04-22 14:51:59,139 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\__init__.py', reloading
+2025-04-22 14:51:59,140 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\connection.py', reloading
+2025-04-22 14:51:59,140 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\connection.py', reloading
+2025-04-22 14:51:59,140 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\proxy.py', reloading
+2025-04-22 14:51:59,141 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\proxy.py', reloading
+2025-04-22 14:51:59,141 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\request.py', reloading
+2025-04-22 14:51:59,141 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\request.py', reloading
+2025-04-22 14:51:59,142 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\response.py', reloading
+2025-04-22 14:51:59,142 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\response.py', reloading
+2025-04-22 14:51:59,143 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\retry.py', reloading
+2025-04-22 14:51:59,143 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\retry.py', reloading
+2025-04-22 14:51:59,143 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssl_.py', reloading
+2025-04-22 14:51:59,144 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssl_.py', reloading
+2025-04-22 14:51:59,144 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py', reloading
+2025-04-22 14:51:59,144 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py', reloading
+2025-04-22 14:51:59,145 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssltransport.py', reloading
+2025-04-22 14:51:59,145 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssltransport.py', reloading
+2025-04-22 14:51:59,145 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\ssltransport.py', reloading
+2025-04-22 14:51:59,146 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\timeout.py', reloading
+2025-04-22 14:51:59,146 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\timeout.py', reloading
+2025-04-22 14:51:59,146 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\url.py', reloading
+2025-04-22 14:51:59,147 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\url.py', reloading
+2025-04-22 14:51:59,147 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\util.py', reloading
+2025-04-22 14:51:59,148 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\util.py', reloading
+2025-04-22 14:51:59,149 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\wait.py', reloading
+2025-04-22 14:51:59,149 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\urllib3\\util\\wait.py', reloading
+2025-04-22 14:51:59,283 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:51:59,953 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:51:59,954 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:51:59,979 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:51:59,986 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:52:00,259 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\__init__.py', reloading
+2025-04-22 14:52:00,260 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\__init__.py', reloading
+2025-04-22 14:52:00,261 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\__main__.py', reloading
+2025-04-22 14:52:00,262 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\__main__.py', reloading
+2025-04-22 14:52:00,262 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\api.py', reloading
+2025-04-22 14:52:00,262 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\api.py', reloading
+2025-04-22 14:52:00,263 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\api.py', reloading
+2025-04-22 14:52:00,263 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cd.py', reloading
+2025-04-22 14:52:00,264 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cd.py', reloading
+2025-04-22 14:52:00,264 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\constant.py', reloading
+2025-04-22 14:52:00,265 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\constant.py', reloading
+2025-04-22 14:52:00,266 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\legacy.py', reloading
+2025-04-22 14:52:00,266 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\legacy.py', reloading
+2025-04-22 14:52:00,267 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\md.py', reloading
+2025-04-22 14:52:00,268 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\md.py', reloading
+2025-04-22 14:52:00,268 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\md.py', reloading
+2025-04-22 14:52:00,270 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\models.py', reloading
+2025-04-22 14:52:00,270 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\models.py', reloading
+2025-04-22 14:52:00,271 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\models.py', reloading
+2025-04-22 14:52:00,271 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\utils.py', reloading
+2025-04-22 14:52:00,272 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\utils.py', reloading
+2025-04-22 14:52:00,272 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\version.py', reloading
+2025-04-22 14:52:00,273 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\version.py', reloading
+2025-04-22 14:52:00,274 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__init__.py', reloading
+2025-04-22 14:52:00,274 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__main__.py', reloading
+2025-04-22 14:52:00,274 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__init__.py', reloading
+2025-04-22 14:52:00,275 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__init__.py', reloading
+2025-04-22 14:52:00,275 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__main__.py', reloading
+2025-04-22 14:52:00,276 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\charset_normalizer\\cli\\__main__.py', reloading
+2025-04-22 14:52:00,658 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\__init__.py', reloading
+2025-04-22 14:52:00,659 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\__init__.py', reloading
+2025-04-22 14:52:00,659 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\__main__.py', reloading
+2025-04-22 14:52:00,660 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\__main__.py', reloading
+2025-04-22 14:52:00,663 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\core.py', reloading
+2025-04-22 14:52:00,664 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\certifi\\core.py', reloading
+2025-04-22 14:52:00,813 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\__init__.py', reloading
+2025-04-22 14:52:00,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\__init__.py', reloading
+2025-04-22 14:52:00,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\__version__.py', reloading
+2025-04-22 14:52:00,815 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\__version__.py', reloading
+2025-04-22 14:52:00,815 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\_internal_utils.py', reloading
+2025-04-22 14:52:00,816 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\_internal_utils.py', reloading
+2025-04-22 14:52:00,816 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\adapters.py', reloading
+2025-04-22 14:52:00,816 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\adapters.py', reloading
+2025-04-22 14:52:00,817 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\api.py', reloading
+2025-04-22 14:52:00,818 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\api.py', reloading
+2025-04-22 14:52:00,818 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\auth.py', reloading
+2025-04-22 14:52:00,819 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\auth.py', reloading
+2025-04-22 14:52:00,819 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\certs.py', reloading
+2025-04-22 14:52:00,820 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\certs.py', reloading
+2025-04-22 14:52:00,820 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\compat.py', reloading
+2025-04-22 14:52:00,821 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\compat.py', reloading
+2025-04-22 14:52:00,821 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\cookies.py', reloading
+2025-04-22 14:52:00,822 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\cookies.py', reloading
+2025-04-22 14:52:00,822 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\exceptions.py', reloading
+2025-04-22 14:52:00,823 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\exceptions.py', reloading
+2025-04-22 14:52:00,823 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\help.py', reloading
+2025-04-22 14:52:00,824 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\help.py', reloading
+2025-04-22 14:52:00,824 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\hooks.py', reloading
+2025-04-22 14:52:00,824 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\hooks.py', reloading
+2025-04-22 14:52:00,825 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\models.py', reloading
+2025-04-22 14:52:00,826 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\models.py', reloading
+2025-04-22 14:52:00,826 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\packages.py', reloading
+2025-04-22 14:52:00,826 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\packages.py', reloading
+2025-04-22 14:52:00,827 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\sessions.py', reloading
+2025-04-22 14:52:00,827 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\sessions.py', reloading
+2025-04-22 14:52:00,828 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\status_codes.py', reloading
+2025-04-22 14:52:00,828 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\status_codes.py', reloading
+2025-04-22 14:52:00,829 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\structures.py', reloading
+2025-04-22 14:52:00,830 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\structures.py', reloading
+2025-04-22 14:52:00,830 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\utils.py', reloading
+2025-04-22 14:52:00,830 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\Lib\\site-packages\\requests\\utils.py', reloading
+2025-04-22 14:52:01,131 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:52:01,847 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:52:01,848 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:52:01,875 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:52:01,882 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:52:30,194 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:52:30,195 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:52:30,196 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\image_processing_system\\image_watcher.py', reloading
+2025-04-22 14:52:30,527 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 14:52:31,235 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 14:52:31,236 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 14:52:31,265 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 14:52:31,272 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 14:55:20,629 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:20] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:22,018 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:22] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:23,085 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:23] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:24,293 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:24] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:36,798 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:36] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:38,337 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:38] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:40,308 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:40] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:46,121 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:46] "GET / HTTP/1.1" 200 -
+2025-04-22 14:55:47,476 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:55:47] "GET / HTTP/1.1" 200 -
+2025-04-22 14:56:10,235 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:56:10] "GET / HTTP/1.1" 200 -
+2025-04-22 14:57:19,220 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 14:57:19] "GET / HTTP/1.1" 200 -
+2025-04-22 15:00:03,506 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 15:00:03,507 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 15:00:04,381 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.23:5000
+2025-04-22 15:00:04,381 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 15:00:04,400 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 15:00:05,207 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 15:00:05,208 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 15:00:05,234 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 15:00:05,241 - werkzeug - INFO -  * Debugger PIN: 112-498-589
+2025-04-22 15:00:20,416 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:20] "GET / HTTP/1.1" 200 -
+2025-04-22 15:00:21,482 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145513.jpg
+2025-04-22 15:00:21,982 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145513.jpg
+2025-04-22 15:00:22,095 - flask_ocr_server - INFO - OCR result saved to database with ID: 1 for image parcel_20250422_145513.jpg
+2025-04-22 15:00:22,096 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:22] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:22,395 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:22] "GET / HTTP/1.1" 200 -
+2025-04-22 15:00:22,823 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:22] "GET /uploads/parcel_20250422_145513.jpg HTTP/1.1" 200 -
+2025-04-22 15:00:26,177 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145523.jpg
+2025-04-22 15:00:26,694 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145523.jpg
+2025-04-22 15:00:26,764 - flask_ocr_server - INFO - OCR result saved to database with ID: 2 for image parcel_20250422_145523.jpg
+2025-04-22 15:00:26,764 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:26] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:30,469 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145534.jpg
+2025-04-22 15:00:31,012 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145534.jpg
+2025-04-22 15:00:31,073 - flask_ocr_server - INFO - OCR result saved to database with ID: 3 for image parcel_20250422_145534.jpg
+2025-04-22 15:00:31,074 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:31] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:35,146 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145544.jpg
+2025-04-22 15:00:35,869 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145544.jpg
+2025-04-22 15:00:35,961 - flask_ocr_server - INFO - OCR result saved to database with ID: 4 for image parcel_20250422_145544.jpg
+2025-04-22 15:00:35,966 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:35] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:40,331 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145554.jpg
+2025-04-22 15:00:40,852 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145554.jpg
+2025-04-22 15:00:41,038 - flask_ocr_server - INFO - OCR result saved to database with ID: 5 for image parcel_20250422_145554.jpg
+2025-04-22 15:00:41,045 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:41] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:44,799 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145604.jpg
+2025-04-22 15:00:45,325 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145604.jpg
+2025-04-22 15:00:45,384 - flask_ocr_server - INFO - OCR result saved to database with ID: 6 for image parcel_20250422_145604.jpg
+2025-04-22 15:00:45,384 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:45] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:49,320 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145614.jpg
+2025-04-22 15:00:50,012 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145614.jpg
+2025-04-22 15:00:50,104 - flask_ocr_server - INFO - OCR result saved to database with ID: 7 for image parcel_20250422_145614.jpg
+2025-04-22 15:00:50,105 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:50] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:53,991 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145624.jpg
+2025-04-22 15:00:54,676 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145624.jpg
+2025-04-22 15:00:54,734 - flask_ocr_server - INFO - OCR result saved to database with ID: 8 for image parcel_20250422_145624.jpg
+2025-04-22 15:00:54,735 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:54] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:00:58,607 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145634.jpg
+2025-04-22 15:00:59,243 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145634.jpg
+2025-04-22 15:00:59,302 - flask_ocr_server - INFO - OCR result saved to database with ID: 9 for image parcel_20250422_145634.jpg
+2025-04-22 15:00:59,303 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:00:59] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:03,254 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145644.jpg
+2025-04-22 15:01:03,918 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145644.jpg
+2025-04-22 15:01:04,033 - flask_ocr_server - INFO - OCR result saved to database with ID: 10 for image parcel_20250422_145644.jpg
+2025-04-22 15:01:04,034 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:04] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:08,222 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145654.jpg
+2025-04-22 15:01:08,713 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145654.jpg
+2025-04-22 15:01:08,774 - flask_ocr_server - INFO - OCR result saved to database with ID: 11 for image parcel_20250422_145654.jpg
+2025-04-22 15:01:08,774 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:08] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:12,619 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145704.jpg
+2025-04-22 15:01:13,140 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145704.jpg
+2025-04-22 15:01:13,200 - flask_ocr_server - INFO - OCR result saved to database with ID: 12 for image parcel_20250422_145704.jpg
+2025-04-22 15:01:13,201 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:13] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:17,206 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145714.jpg
+2025-04-22 15:01:17,724 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145714.jpg
+2025-04-22 15:01:17,784 - flask_ocr_server - INFO - OCR result saved to database with ID: 13 for image parcel_20250422_145714.jpg
+2025-04-22 15:01:17,784 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:17] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:21,676 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145724.jpg
+2025-04-22 15:01:22,187 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145724.jpg
+2025-04-22 15:01:22,250 - flask_ocr_server - INFO - OCR result saved to database with ID: 14 for image parcel_20250422_145724.jpg
+2025-04-22 15:01:22,251 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:22] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:26,082 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145734.jpg
+2025-04-22 15:01:26,599 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145734.jpg
+2025-04-22 15:01:26,657 - flask_ocr_server - INFO - OCR result saved to database with ID: 15 for image parcel_20250422_145734.jpg
+2025-04-22 15:01:26,658 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:26] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:30,506 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145744.jpg
+2025-04-22 15:01:31,151 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145744.jpg
+2025-04-22 15:01:31,255 - flask_ocr_server - INFO - OCR result saved to database with ID: 16 for image parcel_20250422_145744.jpg
+2025-04-22 15:01:31,260 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:31] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:35,095 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145754.jpg
+2025-04-22 15:01:35,585 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145754.jpg
+2025-04-22 15:01:35,645 - flask_ocr_server - INFO - OCR result saved to database with ID: 17 for image parcel_20250422_145754.jpg
+2025-04-22 15:01:35,645 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:35] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:39,440 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_145804.jpg
+2025-04-22 15:01:39,995 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_145804.jpg
+2025-04-22 15:01:40,117 - flask_ocr_server - INFO - OCR result saved to database with ID: 18 for image parcel_20250422_145804.jpg
+2025-04-22 15:01:40,118 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:40] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:43,820 - flask_ocr_server - INFO - Image saved: uploads\parcel_20250422_150005.jpg
+2025-04-22 15:01:44,307 - flask_ocr_server - INFO - OCR processing completed for uploads\parcel_20250422_150005.jpg
+2025-04-22 15:01:44,366 - flask_ocr_server - INFO - OCR result saved to database with ID: 19 for image parcel_20250422_150005.jpg
+2025-04-22 15:01:44,367 - werkzeug - INFO - 127.0.0.1 - - [22/Apr/2025 15:01:44] "POST /upload_image HTTP/1.1" 200 -
+2025-04-22 15:01:44,401 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\client.py', reloading
+2025-04-22 15:01:44,469 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Cj Parame\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socket.py', reloading
+2025-04-22 15:01:45,161 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 15:01:45,975 - flask_ocr_server - INFO - Database table checked/created successfully
+2025-04-22 15:01:45,978 - flask_ocr_server - INFO - Starting Flask server
+2025-04-22 15:01:46,003 - werkzeug - WARNING -  * Debugger is active!
+2025-04-22 15:01:46,011 - werkzeug - INFO -  * Debugger PIN: 112-498-589
