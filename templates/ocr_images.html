@@ -380,25 +380,25 @@
                 <div class="panel-header">
                     <div class="panel-title">TRACKING</div>
                 </div>
-                <form>
-                    <form id="tracking-form" action="/track_package" method="post">
-                        <div class="form-group">
-                            <label class="form-label" for="tracking-number">TRACKING #</label>
-                            <input type="text" class="form-input" id="tracking-number" name="tracking_number" placeholder="Enter tracking number">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="recipient">RECIPIENT</label>
-                            <input type="text" class="form-input" id="recipient" name="recipient" placeholder="Enter recipient name">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="date">DATE</label>
-                            <input type="text" class="form-input" id="date" name="date" placeholder="MM/DD/YYYY">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="address">ADDRESS</label>
-                            <input type="text" class="form-input" id="address" name="address" placeholder="Enter delivery address">
-                        </div>
-                        <button type="submit" class="track-button">Track Now</button>
+                <form id="tracking-form" action="/track_package" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="tracking-number">TRACKING #</label>
+                        <input type="text" class="form-input" id="tracking-number" name="tracking_number" placeholder="Enter tracking number">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="recipient">RECIPIENT</label>
+                        <input type="text" class="form-input" id="recipient" name="recipient" placeholder="Enter recipient name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="date">DATE</label>
+                        <input type="text" class="form-input" id="date" name="date" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="address">ADDRESS</label>
+                        <input type="text" class="form-input" id="address" name="address" placeholder="Enter delivery address">
+                    </div>
+                    <button type="submit" class="track-button">Track Now</button>
+                </form>
 
                     </form>
                 </form>
@@ -534,7 +534,272 @@
                             console.error('Error:', error);
                             resultsContainer.innerHTML = '<div style="color: #e74c3c; padding: 10px;">An error occurred while processing your request.</div>';
                         });
-                    });                           
+                    });
+                    
+                    // Add this to your script section
+document.addEventListener('DOMContentLoaded', function() {
+    const trackingForm = document.getElementById('tracking-form');
+    
+    if (trackingForm) {
+        trackingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            // Create a results container if it doesn't exist
+            let resultsContainer = document.getElementById('tracking-results-container');
+            if (!resultsContainer) {
+                resultsContainer = document.createElement('div');
+                resultsContainer.id = 'tracking-results-container';
+                resultsContainer.style.marginTop = '20px';
+                resultsContainer.style.backgroundColor = 'var(--spotify-gray)';
+                resultsContainer.style.borderRadius = '8px';
+                resultsContainer.style.padding = '15px';
+                
+                // Insert after the form
+                this.parentNode.insertBefore(resultsContainer, this.nextSibling);
+            }
+            
+            // Show loading indicator
+            resultsContainer.innerHTML = '<div style="text-align: center; padding: 10px;">Searching...</div>';
+            
+            fetch('/track_package', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear previous results
+                resultsContainer.innerHTML = '';
+                
+                if (data.error) {
+                    resultsContainer.innerHTML = `<div style="color: #e74c3c; padding: 10px;">Error: ${data.error}</div>`;
+                    return;
+                }
+                
+                if (data.results.length === 0) {
+                    resultsContainer.innerHTML = '<div style="padding: 10px; color: var(--spotify-light-gray);">No matching packages found.</div>';
+                    return;
+                }
+                
+                // Add results header
+                const resultsHeader = document.createElement('div');
+                resultsHeader.style.fontWeight = 'bold';
+                resultsHeader.style.fontSize = '16px';
+                resultsHeader.style.marginBottom = '15px';
+                resultsHeader.style.color = 'var(--spotify-green)';
+                resultsHeader.textContent = `Found ${data.results.length} matching package(s)`;
+                resultsContainer.appendChild(resultsHeader);
+                
+                // Display results
+                data.results.forEach(result => {
+                    const resultCard = document.createElement('div');
+                    resultCard.className = 'result-card';
+                    resultCard.style.padding = '10px';
+                    resultCard.style.marginBottom = '10px';
+                    resultCard.style.borderRadius = '4px';
+                    resultCard.style.backgroundColor = 'var(--spotify-dark-gray)';
+                    
+                    // Extract key information from text_content
+                    const trackingInfo = extractTrackingInfo(result.text_content);
+                    
+                    resultCard.innerHTML = `
+                        <div style="font-weight: bold; margin-bottom: 5px;">Package ID: ${result.id}</div>
+                        <div style="font-size: 12px; margin-bottom: 5px;">
+                            <strong>Date:</strong> ${result.timestamp ? new Date(result.timestamp).toLocaleString() : 'Unknown'}
+                        </div>
+                        ${trackingInfo.tracking ? `<div style="font-size: 12px;"><strong>Tracking:</strong> ${trackingInfo.tracking}</div>` : ''}
+                        ${trackingInfo.recipient ? `<div style="font-size: 12px;"><strong>Recipient:</strong> ${trackingInfo.recipient}</div>` : ''}
+                        ${trackingInfo.address ? `<div style="font-size: 12px;"><strong>Address:</strong> ${trackingInfo.address}</div>` : ''}
+                        <div style="font-size: 12px;"><strong>Destination:</strong> ${result.predicted_destination || 'Unknown'}</div>
+                        <div style="margin-top: 10px;">
+                            <a href="#" class="view-image" data-image="${result.image_path}" style="color: var(--spotify-green); text-decoration: none; font-size: 12px;">
+                                View Image
+                            </a>
+                            <a href="#" class="view-text" data-text="${encodeURIComponent(result.text_content)}" style="color: var(--spotify-green); text-decoration: none; font-size: 12px; margin-left: 15px;">
+                                View Full Text
+                            </a>
+                        </div>
+                    `;
+                    
+                    resultsContainer.appendChild(resultCard);
+                });
+                
+                // Add click handlers for "View Image" links
+                document.querySelectorAll('.view-image').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const imagePath = this.getAttribute('data-image');
+                        // Find and highlight the matching image in the grid
+                        highlightMatchingImage(imagePath);
+                    });
+                });
+                
+                // Add click handlers for "View Full Text" links
+                document.querySelectorAll('.view-text').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const text = decodeURIComponent(this.getAttribute('data-text'));
+                        showTextModal(text);
+                    });
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                resultsContainer.innerHTML = '<div style="color: #e74c3c; padding: 10px;">An error occurred while processing your request.</div>';
+            });
+        });
+    }
+});
+
+                // Function to extract tracking info from OCR text
+                function extractTrackingInfo(text) {
+                    if (!text) return {};
+                    
+                    const result = {
+                        tracking: null,
+                        recipient: null,
+                        address: null
+                    };
+                    
+                    // Simple pattern matching for tracking numbers
+                    const trackingPatterns = [
+                        /\b([A-Z0-9]{10,18})\b/,  // Generic tracking number pattern
+                        /\btrack(?:ing)?(?:\s*(?:no|number|#|:))?\s*([A-Z0-9]{10,18})\b/i,  // "Tracking number: XXX" pattern
+                        /\b(?:LBC|JRS|J&T|DHL|FedEx|UPS)[\s-]*([A-Z0-9]{8,15})\b/i  // Courier + number pattern
+                    ];
+                    
+                    // Try each pattern
+                    for (const pattern of trackingPatterns) {
+                        const match = text.match(pattern);
+                        if (match && match[1]) {
+                            result.tracking = match[1];
+                            break;
+                        }
+                    }
+                    
+                    // Extract recipient (simple heuristic)
+                    const recipientPatterns = [
+                        /recipient\s*(?:name)?[:;]\s*([A-Za-z\s.]{3,40}?)(?:\n|,|\.|$)/i,
+                        /to\s*[:;]\s*([A-Za-z\s.]{3,40}?)(?:\n|,|\.|$)/i,
+                        /consignee\s*[:;]\s*([A-Za-z\s.]{3,40}?)(?:\n|,|\.|$)/i
+                    ];
+                    
+                    for (const pattern of recipientPatterns) {
+                        const match = text.match(pattern);
+                        if (match && match[1]) {
+                            result.recipient = match[1].trim();
+                            break;
+                        }
+                    }
+                    
+                    // Extract address (simple heuristic)
+                    const addressPatterns = [
+                        /address\s*[:;]\s*([A-Za-z0-9\s.,#-]{10,100}?)(?:\n\n|\n[A-Z]|$)/i,
+                        /(?:barangay|brgy|street|st|avenue|ave|highway|road|rd)\.?\s+([A-Za-z0-9\s.,#-]{5,100}?)(?:\n\n|\n[A-Z]|$)/i
+                    ];
+                    
+                    for (const pattern of addressPatterns) {
+                        const match = text.match(pattern);
+                        if (match && match[1]) {
+                            result.address = match[1].trim();
+                            break;
+                        }
+                    }
+                    
+                    return result;
+                }
+
+                // Function to highlight matching image in the grid
+                function highlightMatchingImage(imagePath) {
+                    const gridImages = document.querySelectorAll('.image-card');
+                    let found = false;
+                    
+                    for (let card of gridImages) {
+                        const img = card.querySelector('img');
+                        if (img && img.src.includes(imagePath)) {
+                            // Scroll to the card
+                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            
+                            // Highlight effect
+                            const originalBorder = card.style.boxShadow;
+                            card.style.boxShadow = '0 0 0 3px var(--spotify-green)';
+                            card.style.transform = 'scale(1.03)';
+                            
+                            // Remove highlight after 3 seconds
+                            setTimeout(() => {
+                                card.style.boxShadow = originalBorder;
+                                card.style.transform = '';
+                            }, 3000);
+                            
+                            found = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!found) {
+                        alert('Image not found in the current view.');
+                    }
+                }
+
+                // Function to show text modal
+                function showTextModal(text) {
+                    // Create modal container
+                    const modal = document.createElement('div');
+                    modal.style.position = 'fixed';
+                    modal.style.top = '0';
+                    modal.style.left = '0';
+                    modal.style.width = '100%';
+                    modal.style.height = '100%';
+                    modal.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                    modal.style.zIndex = '1000';
+                    modal.style.display = 'flex';
+                    modal.style.justifyContent = 'center';
+                    modal.style.alignItems = 'center';
+                    
+                    // Create modal content
+                    const content = document.createElement('div');
+                    content.style.backgroundColor = 'var(--spotify-dark-gray)';
+                    content.style.padding = '20px';
+                    content.style.borderRadius = '8px';
+                    content.style.maxWidth = '80%';
+                    content.style.maxHeight = '80%';
+                    content.style.overflow = 'auto';
+                    
+                    // Add close button
+                    const closeBtn = document.createElement('div');
+                    closeBtn.textContent = '✖';
+                    closeBtn.style.position = 'absolute';
+                    closeBtn.style.top = '10px';
+                    closeBtn.style.right = '15px';
+                    closeBtn.style.fontSize = '18px';
+                    closeBtn.style.cursor = 'pointer';
+                    closeBtn.style.color = 'var(--spotify-light-gray)';
+                    closeBtn.onclick = () => document.body.removeChild(modal);
+                    
+                    // Add text content
+                    const textContent = document.createElement('pre');
+                    textContent.style.whiteSpace = 'pre-wrap';
+                    textContent.style.wordBreak = 'break-word';
+                    textContent.style.color = 'var(--spotify-white)';
+                    textContent.style.fontSize = '14px';
+                    textContent.style.fontFamily = 'monospace';
+                    textContent.textContent = text;
+                    
+                    // Assemble modal
+                    content.appendChild(closeBtn);
+                    content.appendChild(textContent);
+                    modal.appendChild(content);
+                    
+                    // Add to body and set up close on background click
+                    document.body.appendChild(modal);
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
+                            document.body.removeChild(modal);
+                        }
+                    });
+                }
+
                 }
             })
             .catch(error => console.error('Error fetching OCR results:', error));  

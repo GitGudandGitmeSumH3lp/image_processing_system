@@ -68,30 +68,6 @@ def connect_to_db():
     except Exception as e:
         logger.error(f"Database connection error: {e}")
         return None
-    
-#INITIALIZE OCR_RESULTS TABLE
-def ensure_ocr_table():
-    conn = connect_to_db()
-    if conn:
-        try:
-            cur = conn.cursor()
-            cur.execute("""
-                CREATE TABLE IF NOT EXISTS ocr_results (
-                    id SERIAL PRIMARY KEY,
-                    text_content TEXT,
-                    image_path TEXT,
-                    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    predicted_destination TEXT,
-                    match_score FLOAT
-                );
-            """)
-            conn.commit()
-            cur.close()
-            conn.close()
-            logger.info("ocr_results table ensured.")
-        except Exception as e:
-            logger.error(f"Error creating ocr_results table: {e}")
-
 
 # Initialize database tables and admin user
 @app.before_request
@@ -318,15 +294,6 @@ def serve_uploaded_images(filename):
         return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
     except FileNotFoundError:
         abort(404)
-
-#INITIALIZE OCR_RESULTS TABLE
-@app.before_request
-def initialize_db():
-    with app.app_context():
-        db.create_all()
-        ensure_ocr_table()  # <--- call it here
-
-
 #TRACKING PANEL SEARCH FUNCTION
 @app.route('/track_package', methods=['POST'])
 def track_package():
@@ -384,7 +351,6 @@ def track_package():
             return jsonify({'error': 'Database error', 'details': str(e)}), 500
     
     return jsonify({'results': results})
-    
 
 if __name__ == '__main__':
     logger.info("Starting Flask server")

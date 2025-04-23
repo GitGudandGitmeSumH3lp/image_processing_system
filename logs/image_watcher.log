@@ -11032,3 +11032,242 @@ UnboundLocalError: cannot access local variable 'target_keywords' where it is no
 2025-04-24 01:47:52,607 - image_watcher - INFO - Processed 0 existing images
 2025-04-24 01:47:52,608 - image_watcher - INFO - Setting up file system watcher for simulation/incoming_images
 2025-04-24 01:47:52,608 - image_watcher - INFO - Image watcher started. Press Ctrl+C to stop.
+2025-04-24 02:02:17,371 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150005.jpg
+2025-04-24 02:02:17,873 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150005.jpg (Size: 51026)
+2025-04-24 02:02:17,873 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150005.jpg
+2025-04-24 02:02:17,889 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:18,379 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:19,235 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): a FY © 2 wen = er
+Soo 2 Da eos
+— £5 YB a hoot F
+—_S rr bea So
+ie 3 m cn
+— Tw SER 7 Ll <
+SY Oe at Oo ...
+2025-04-24 02:02:19,238 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:19,241 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150005.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:19,243 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150015.jpg
+2025-04-24 02:02:19,744 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150015.jpg (Size: 51134)
+2025-04-24 02:02:19,744 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150015.jpg
+2025-04-24 02:02:19,760 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:20,278 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:21,181 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): or ee eo) nr
+EE a Io B
+me Doz
+——+—° ens oo ae
+u Pere: 1 on
+DSB ua Lay
+_ a9 9 ree
+— 5G Fw ns 5 9
+—— a...
+2025-04-24 02:02:21,181 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:21,181 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150015.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:21,183 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150025.jpg
+2025-04-24 02:02:21,685 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150025.jpg (Size: 52741)
+2025-04-24 02:02:21,685 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150025.jpg
+2025-04-24 02:02:21,703 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:22,250 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:23,201 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): et er er
+me OO 1 2S
+— rr ta" SB Rs “
+
+sae on a 2
+
+— & se
+
+au Dome my
+aT SG EG < los 4
+FH DG te ze 4 ...
+2025-04-24 02:02:23,201 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:23,202 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150025.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:23,204 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150035.jpg
+2025-04-24 02:02:23,704 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150035.jpg (Size: 53008)
+2025-04-24 02:02:23,705 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150035.jpg
+2025-04-24 02:02:23,718 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:24,265 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:25,184 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): re re) er a
+are DR =!
+mE ll Oo BO ra oS
+— rrf*e on
+= © 7 LF Pog ye
+—— D Sine mS
+ww SE c Loy
+—! Boeke...
+2025-04-24 02:02:25,185 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:25,185 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150035.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:25,187 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150046.jpg
+2025-04-24 02:02:25,688 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150046.jpg (Size: 51590)
+2025-04-24 02:02:25,689 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150046.jpg
+2025-04-24 02:02:25,704 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:26,174 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:27,225 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): aS ho. rr ar
+ef 5 YD to BOE
+we & a Arch
+a ee a 7
+a af NG se
+—, moe tho GF
+au De we |
+ee 4 pw
+ets Sa ...
+2025-04-24 02:02:27,225 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:27,225 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150046.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:27,227 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150056.jpg
+2025-04-24 02:02:27,729 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150056.jpg (Size: 51211)
+2025-04-24 02:02:27,729 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150056.jpg
+2025-04-24 02:02:27,748 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:28,272 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:29,209 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): ns 2 ee en wo. nt a
+—s 6 FY ® i fh S
+7-~ Gy § 2 3S 58 Pret
+yo Ss = al
+ae OY ens BO ap
+u PE pez moa
+—...
+2025-04-24 02:02:29,209 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:29,210 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150056.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:29,211 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150106.jpg
+2025-04-24 02:02:29,713 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150106.jpg (Size: 51827)
+2025-04-24 02:02:29,713 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150106.jpg
+2025-04-24 02:02:29,732 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:30,204 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:31,301 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): —_—ie Oo eB Se bo >
+—— Fre hs a48
+se fas me
+——+ oe hoe se
+i = a co om in moe
+To => , wv aa aS @
+ms a...
+2025-04-24 02:02:31,302 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:31,302 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150106.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:31,304 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150116.jpg
+2025-04-24 02:02:31,804 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150116.jpg (Size: 52279)
+2025-04-24 02:02:31,804 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150116.jpg
+2025-04-24 02:02:31,820 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:32,335 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:33,292 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): aS .) ae
+— § av Ra hm OS
+moo a tS Qs
+See c ms
+uw DS Re ow &
+— ww ses c los
+FH OG te Ze ao 2
+Pennal a...
+2025-04-24 02:02:33,293 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:33,293 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150116.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:33,309 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150126.jpg
+2025-04-24 02:02:33,810 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150126.jpg (Size: 51435)
+2025-04-24 02:02:33,810 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150126.jpg
+2025-04-24 02:02:33,843 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:34,535 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:35,443 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): a AAS Ww vt ~ _— iy
+
+yoo 2 ra vos
+a ite 7 RY
+as YH ES a i =
+ee en oe @
+
+— Go © oeg Ba € vu
+— com 5 |...
+2025-04-24 02:02:35,444 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:35,444 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150126.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:35,446 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150136.jpg
+2025-04-24 02:02:35,947 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150136.jpg (Size: 53251)
+2025-04-24 02:02:35,947 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150136.jpg
+2025-04-24 02:02:35,962 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:36,542 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:37,509 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): ee ey ee nt a
+> o¢ 2 ¥ a =
+— 228 3g i F
+Le ee el fod ng?
+au tse he OP
+Tw SER © Lo
+—Y Oe lUalCUE oa t...
+2025-04-24 02:02:37,510 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:37,510 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150136.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:37,512 - image_watcher - INFO - New image detected: simulation/incoming_images\parcel_20250422_150146.jpg
+2025-04-24 02:02:38,013 - image_watcher - INFO - File size stable, proceeding with processing: simulation/incoming_images\parcel_20250422_150146.jpg (Size: 53223)
+2025-04-24 02:02:38,013 - image_watcher - INFO - Processing image: simulation/incoming_images\parcel_20250422_150146.jpg
+2025-04-24 02:02:38,032 - image_watcher - INFO - Image is very bright, applying contrast enhancement
+2025-04-24 02:02:38,533 - image_watcher - INFO - OCR Result (psm4_oem3_adaptive): ...
+2025-04-24 02:02:39,503 - image_watcher - INFO - OCR Result (psm6_oem3_otsu): ee en 2 er) rt
+Soe Da eos
+ae fee § Bes
+a woo iad hm al
+——t pee th 2
+ua Pog me 7 vote
+a ee) c Loa
+—_F...
+2025-04-24 02:02:39,503 - image_watcher - INFO - Found good result with config psm6_oem3_otsu, skipping additional OCR attempts
+2025-04-24 02:02:39,503 - image_watcher - ERROR - Error processing image simulation/incoming_images\parcel_20250422_150146.jpg: cannot access local variable 'target_keywords' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 353, in process_image
+  File "C:\Users\Cj Parame\image_processing_system\image_watcher.py", line 313, in extract_text_from_image
+    else:
+    
+UnboundLocalError: cannot access local variable 'target_keywords' where it is not associated with a value
+2025-04-24 02:02:50,982 - image_watcher - INFO - Image watcher stopping...
+2025-04-24 02:02:50,982 - image_watcher - INFO - Observer stopped.
+2025-04-24 02:02:50,983 - image_watcher - INFO - Releasing servos...
+2025-04-24 02:02:50,983 - servo_controller - INFO - STUB: Releasing servo motors (simulation mode)
+2025-04-24 02:02:50,983 - image_watcher - INFO - Servos released.
+2025-04-24 02:02:50,983 - image_watcher - INFO - Image watcher shutdown complete.
