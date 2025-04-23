@@ -66,3 +66,72 @@
 2025-04-22 15:01:46,149 - esp32cam_simulator - INFO - Generated image #11
 2025-04-22 15:01:48,451 - esp32cam_simulator - INFO - Simulator stopped by user
 2025-04-22 15:01:48,451 - esp32cam_simulator - INFO - Simulator finished after generating 11 images
+2025-04-22 18:38:03,150 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-22 18:38:03,163 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-22 18:38:03,163 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-22 18:38:03,415 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_183803.jpg
+2025-04-22 18:38:03,418 - esp32cam_simulator - INFO - Generated image #1
+2025-04-22 18:38:08,759 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-22 18:38:08,760 - esp32cam_simulator - INFO - Simulator finished after generating 1 images
+2025-04-22 19:05:13,874 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-22 19:05:13,874 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-22 19:05:13,875 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-22 19:05:13,896 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190513.jpg
+2025-04-22 19:05:13,897 - esp32cam_simulator - INFO - Generated image #1
+2025-04-22 19:05:23,919 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190523.jpg
+2025-04-22 19:05:23,920 - esp32cam_simulator - INFO - Generated image #2
+2025-04-22 19:05:33,938 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190533.jpg
+2025-04-22 19:05:33,939 - esp32cam_simulator - INFO - Generated image #3
+2025-04-22 19:05:43,960 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190543.jpg
+2025-04-22 19:05:43,961 - esp32cam_simulator - INFO - Generated image #4
+2025-04-22 19:05:53,986 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190553.jpg
+2025-04-22 19:05:53,986 - esp32cam_simulator - INFO - Generated image #5
+2025-04-22 19:06:04,007 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250422_190603.jpg
+2025-04-22 19:06:04,008 - esp32cam_simulator - INFO - Generated image #6
+2025-04-22 19:06:07,458 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-22 19:06:07,459 - esp32cam_simulator - INFO - Simulator finished after generating 6 images
+2025-04-23 03:37:49,244 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-23 03:37:49,258 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-23 03:37:49,258 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-23 03:37:49,499 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_033749.jpg
+2025-04-23 03:37:49,502 - esp32cam_simulator - INFO - Generated image #1
+2025-04-23 03:37:59,519 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_033759.jpg
+2025-04-23 03:37:59,519 - esp32cam_simulator - INFO - Generated image #2
+2025-04-23 03:38:01,059 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-23 03:38:01,060 - esp32cam_simulator - INFO - Simulator finished after generating 2 images
+2025-04-23 18:39:00,244 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-23 18:39:00,258 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-23 18:39:00,258 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-23 18:39:00,521 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_183900.jpg
+2025-04-23 18:39:00,521 - esp32cam_simulator - INFO - Generated image #1
+2025-04-23 18:39:10,541 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_183910.jpg
+2025-04-23 18:39:10,542 - esp32cam_simulator - INFO - Generated image #2
+2025-04-23 18:39:20,615 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_183920.jpg
+2025-04-23 18:39:20,616 - esp32cam_simulator - INFO - Generated image #3
+2025-04-23 18:39:30,635 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_183930.jpg
+2025-04-23 18:39:30,636 - esp32cam_simulator - INFO - Generated image #4
+2025-04-23 18:39:40,721 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_183940.jpg
+2025-04-23 18:39:40,724 - esp32cam_simulator - INFO - Generated image #5
+2025-04-23 18:39:45,531 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-23 18:39:45,532 - esp32cam_simulator - INFO - Simulator finished after generating 5 images
+2025-04-23 22:20:59,587 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-23 22:20:59,616 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-23 22:20:59,616 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-23 22:20:59,843 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250423_222059.jpg
+2025-04-23 22:20:59,844 - esp32cam_simulator - INFO - Generated image #1
+2025-04-23 22:21:00,265 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-23 22:21:00,266 - esp32cam_simulator - INFO - Simulator finished after generating 1 images
+2025-04-24 01:46:56,986 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-24 01:46:56,997 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-24 01:46:56,998 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-24 01:46:57,019 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250424_014656.jpg
+2025-04-24 01:46:57,020 - esp32cam_simulator - INFO - Generated image #1
+2025-04-24 01:46:59,560 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-24 01:46:59,561 - esp32cam_simulator - INFO - Simulator finished after generating 1 images
+2025-04-24 01:47:02,382 - esp32cam_simulator - INFO - Starting parcel detail simulator in generate mode
+2025-04-24 01:47:02,383 - esp32cam_simulator - INFO - Images will be saved to simulation/incoming_images
+2025-04-24 01:47:02,383 - esp32cam_simulator - INFO - Interval between images: 10 seconds
+2025-04-24 01:47:02,406 - esp32cam_simulator - INFO - Generated parcel detail image: simulation/incoming_images\parcel_20250424_014702.jpg
+2025-04-24 01:47:02,408 - esp32cam_simulator - INFO - Generated image #1
+2025-04-24 01:47:04,156 - esp32cam_simulator - INFO - Simulator stopped by user
+2025-04-24 01:47:04,157 - esp32cam_simulator - INFO - Simulator finished after generating 1 images

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track It</title>
+    <style>
+        :root {
+            --spotify-black: #121212;
+            --spotify-dark-gray: #181818;
+            --spotify-gray: #282828;
+            --spotify-light-gray: #b3b3b3;
+            --spotify-green: #1DB954;
+            --spotify-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--spotify-black);
+            color: var(--spotify-white);
+        }
+
+        h1 {
+            color: var(--spotify-green);
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .image-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .image-container {
+            height: 80%; /* Increased image area */
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .image-info {
+            padding: 8px;
+            height: 20%; /* Reduced text area */
+            overflow-y: auto;
+            font-size: 12px; /* Smaller font */
+            background-color: rgba(0, 0, 0, 0.7);
+            border-top: 1px solid #333;
+        }
+        
+        /* Custom scrollbar for the text area */
+        .image-info::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .image-info::-webkit-scrollbar-track {
+            background: #1e1e1e;
+        }
+        
+        .image-info::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 3px;
+        }
+        
+        .image-info::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+        
+        .image-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .image-metadata {
+            font-size: 12px;
+            color: #cccccc;
+            line-height: 1.3;
+        }
+        
+        .metadata-item {
+            margin-bottom: 3px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            margin-right: 3px;
+            font-size: 10px;
+        }
+        
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: var(--spotify-dark-gray);
+            padding: 12px 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            color: var(--spotify-white);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--spotify-white);
+            margin-right: 24px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--spotify-green);
+        }
+
+        .search-container {
+            display: flex;
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+            margin-right: 24px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px 40px 10px 16px;
+            border-radius: 500px;
+            border: none;
+            background-color: var(--spotify-gray);
+            color: var(--spotify-white);
+            font-size: 14px;
+        }
+
+        .search-box::placeholder {
+            color: var(--spotify-light-gray);
+        }
+
+        .search-box:focus {
+            outline: none;
+            background-color: #333;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--spotify-light-gray);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .github-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 24px;
+            transition: all 0.2s ease;
+        }
+
+        .github-icon:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .nav-link {
+            color: var(--spotify-light-gray);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--spotify-white);
+        }
+
+        .logout-button {
+            background-color: var(--spotify-white);
+            color: var(--spotify-black);
+            border: none;
+            border-radius: 500px;
+            padding: 10px 32px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .logout-button:hover {
+            transform: scale(1.05);
+        }
+
+        .page-layout {
+            display: flex;
+            min-height: calc(100vh - 56px); /* Account for navbar height */
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 320px;
+            padding: 20px;
+            background-color: var(--spotify-black);
+        }
+
+        .tracking-panel {
+            background-color: var(--spotify-dark-gray);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            margin-top: 115px;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .panel-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--spotify-white);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: var(--spotify-light-gray);
+            font-weight: 700;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--spotify-gray);
+            color: var(--spotify-white);
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--spotify-green);
+        }
+
+        .form-input::placeholder {
+            color: #808080;
+        }
+
+        .track-button {
+            background-color: var(--spotify-green);
+            color: var(--spotify-white);
+            border: none;
+            border-radius: 50px;
+            padding: 14px 32px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #1ed760;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon">☰</div>
+        <a href="#" class="logo"><span>TRACK</span> IT</a>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search packages...">
+            <button class="search-icon">🔍</button>
+        </div>
+        <a href="https://github.com/GitGudandGitmeSumH3lp/image_processing_system" target="_blank" class="github-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="var(--spotify-white)">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+        <div class="nav-links"></div>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="page-layout">
+        <div class="main-content">
+            <div class="header-bar">
+                <h1>Recent Scans</h1>
+            </div>
+
+            <div class="grid-container">
+                {% for r in results %}
+                <div class="image-card">
+                    <div class="image-container">
+                        <img src="{{ url_for('serve_simulation_images', filename=r.filename) }}" alt="Parcel Image">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">{{ r.filename }}</div>
+                        <div class="image-metadata">
+                            <pre style="margin: 0; white-space: pre-wrap; font-family: inherit; font-size: inherit;">{{ r.text }}</pre>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="tracking-panel">
+                <div class="panel-header">
+                    <div class="panel-title">TRACKING</div>
+                </div>
+                <form>
+                    <form id="tracking-form" action="/track_package" method="post">
+                        <div class="form-group">
+                            <label class="form-label" for="tracking-number">TRACKING #</label>
+                            <input type="text" class="form-input" id="tracking-number" name="tracking_number" placeholder="Enter tracking number">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="recipient">RECIPIENT</label>
+                            <input type="text" class="form-input" id="recipient" name="recipient" placeholder="Enter recipient name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="date">DATE</label>
+                            <input type="text" class="form-input" id="date" name="date" placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="address">ADDRESS</label>
+                            <input type="text" class="form-input" id="address" name="address" placeholder="Enter delivery address">
+                        </div>
+                        <button type="submit" class="track-button">Track Now</button>
+
+                    </form>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('date').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '').substring(0, 8);
+            let formatted = '';
+            if (value.length > 0) formatted += value.substring(0, 2);
+            if (value.length > 2) formatted += '/' + value.substring(2, 4);
+            if (value.length > 4) formatted += '/' + value.substring(4, 8);
+            e.target.value = formatted;
+        });
+
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = "/logout";
+            }
+        }
+
+        fetch('/ocr-images')
+            .then(response => response.json())
+            .then(data => {
+                // Process the data and add cards to the grid
+                const gridContainer = document.querySelector('.grid-container');
+                
+                // Only add dynamic cards if we don't have template data
+                if (!document.querySelector('.grid-container .image-card')) {
+                    data.forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = 'image-card';
+                        
+                        card.innerHTML = `
+                            <div class="image-container">
+                                <img src="${item.path}" alt="Parcel Image">
+                            </div>
+                            <div class="image-info">
+                                <div class="image-title">Parcel #${item.id || 'Unknown'}</div>
+                                <div class="image-metadata">
+                                    <div class="metadata-item"><strong>TRACKING #:</strong> ${item.tracking || 'N/A'}</div>
+                                    <div class="metadata-item"><strong>RECIPIENT:</strong> ${item.recipient || 'N/A'}</div>
+                                    <div class="metadata-item"><strong>ADDRESS:</strong> ${item.address || 'N/A'}</div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        gridContainer.appendChild(card);
+                    });
+                    // Handle tracking form submission
+                    document.getElementById('tracking-form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        const formData = new FormData(this);
+                        const resultsContainer = document.getElementById('results-container');
+                        const trackingResults = document.getElementById('tracking-results');
+                        
+                        // Show loading indicator
+                        resultsContainer.innerHTML = '<div style="text-align: center; padding: 20px;">Searching...</div>';
+                        trackingResults.style.display = 'block';
+                        
+                        fetch('/track_package', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            // Clear previous results
+                            resultsContainer.innerHTML = '';
+                            
+                            if (data.error) {
+                                resultsContainer.innerHTML = `<div style="color: #e74c3c; padding: 10px;">Error: ${data.error}</div>`;
+                                return;
+                            }
+                            
+                            if (data.results.length === 0) {
+                                resultsContainer.innerHTML = '<div style="padding: 10px;">No matching packages found.</div>';
+                                return;
+                            }
+                            
+                            // Display results
+                            data.results.forEach(result => {
+                                const resultCard = document.createElement('div');
+                                resultCard.className = 'result-card';
+                                resultCard.style.padding = '10px';
+                                resultCard.style.marginBottom = '10px';
+                                resultCard.style.borderRadius = '4px';
+                                resultCard.style.backgroundColor = 'var(--spotify-dark-gray)';
+                                
+                                resultCard.innerHTML = `
+                                    <div style="font-weight: bold; margin-bottom: 5px;">Package Found</div>
+                                    <div style="font-size: 12px; margin-bottom: 5px;">
+                                        <strong>Date:</strong> ${result.timestamp ? new Date(result.timestamp).toLocaleString() : 'Unknown'}
+                                    </div>
+                                    <div style="font-size: 12px; white-space: pre-wrap; max-height: 100px; overflow-y: auto;">
+                                        ${result.text_content || 'No text content available'}
+                                    </div>
+                                    ${result.image_path ? `
+                                    <div style="margin-top: 10px;">
+                                        <a href="#" class="view-image" data-image="${result.image_path}" style="color: var(--spotify-green); text-decoration: none; font-size: 12px;">
+                                            View Image
+                                        </a>
+                                    </div>` : ''}
+                                `;
+                                
+                                resultsContainer.appendChild(resultCard);
+                            });
+                            
+                            // Add click handlers for "View Image" links
+                            document.querySelectorAll('.view-image').forEach(link => {
+                                link.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    const imagePath = this.getAttribute('data-image');
+                                    // Scroll to image in the grid or open modal
+                                    const gridImages = document.querySelectorAll('.image-card');
+                                    for (let card of gridImages) {
+                                        const filename = card.querySelector('.image-title').textContent;
+                                        if (filename.includes(imagePath)) {
+                                            card.scrollIntoView({ behavior: 'smooth' });
+                                            card.style.boxShadow = '0 0 0 2px var(--spotify-green)';
+                                            setTimeout(() => {
+                                                card.style.boxShadow = '';
+                                            }, 3000);
+                                            break;
+                                        }
+                                    }
+                                });
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            resultsContainer.innerHTML = '<div style="color: #e74c3c; padding: 10px;">An error occurred while processing your request.</div>';
+                        });
+                    });                           
+                }
+            })
+            .catch(error => console.error('Error fetching OCR results:', error));  
+    </script>
+</body>
+</html>

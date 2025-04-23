@@ -1,0 +1,11 @@
+# Ignore Python virtual environments
+venv/
+Lib/
+Scripts/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.env
+*.db
+simulation/

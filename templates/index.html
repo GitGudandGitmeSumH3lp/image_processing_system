@@ -1,146 +1,281 @@
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>OCR Results Viewer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 20px;
-                background-color: #f5f5f5;
-            }
-            h1 {
-                color: #333;
-                text-align: center;
-            }
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: white;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            }
-            .upload-form {
-                margin-bottom: 30px;
-                padding: 20px;
-                background-color: #f9f9f9;
-                border-radius: 8px;
-            }
-            .results {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                gap: 20px;
-            }
-            .result-card {
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                overflow: hidden;
-                background-color: white;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-                display: flex;
-                flex-direction: column; /* Stack content vertically */
-            }
-            .result-image {
-                width: 100%;
-                height: 200px; /* Fixed height for consistency */
-                object-fit: contain; /* Keep aspect ratio, fit within bounds */
-                background-color: #f0f0f0;
-                border-bottom: 1px solid #eee; /* Separator */
-            }
-            .result-text {
-                padding: 15px;
-                flex-grow: 1; /* Allow text area to fill available space */
-                overflow-y: auto;
-                max-height: 150px; /* Limit text height but allow scrolling */
-                font-size: 0.9em;
-                line-height: 1.4;
-            }
-             .result-text pre {
-                white-space: pre-wrap; /* Wrap long text */
-                word-wrap: break-word;
-            }
-            .result-info {
-                padding: 10px 15px;
-                background-color: #f9f9f9;
-                font-size: 0.8em; /* Slightly smaller font */
-                color: #666;
-                border-top: 1px solid #eee;
-                text-align: right; /* Align info to the right */
-            }
-            input[type="file"] {
-                margin: 10px 0;
-                display: block; /* Make input a block element */
-            }
-            button {
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                padding: 10px 15px;
-                border-radius: 4px;
-                cursor: pointer;
-                font-size: 1em;
-            }
-            button:hover {
-                background-color: #45a049;
-            }
-             .upload-form button {
-                margin-top: 10px; /* Add space above button in form */
-             }
-            .empty-message {
-                text-align: center;
-                padding: 20px;
-                color: #666;
-                grid-column: 1 / -1; /* Span across all columns */
-            }
-            .refresh-btn {
-                display: block;
-                margin: 20px auto;
-                padding: 10px 20px;
-                background-color: #2196F3;
-            }
-            .refresh-btn:hover {
-                background-color: #0b7dda;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>OCR Results Viewer</h1>
-
-            <div class="upload-form">
-                <h2>Upload New Image</h2>
-                <form action="/upload_image" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="image" accept="image/png, image/jpeg">
-                    <button type="submit">Upload and Process</button>
-                </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{{ url_for('index', filename='styles/login.css') }}">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #1DB954;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .info-panel {
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-panel {
+            width: 50%;
+            background-color: #2E3F50;
+            padding: 40px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .monthly {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        li:before {
+            content: "•";
+            margin-right: 10px;
+        }
+        
+        .trial-text {
+            margin-top: auto;
+            font-size: 14px;
+        }
+        
+        .family-text {
+            font-size: 12px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        
+        .fine-print {
+            font-size: 9px;
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+        
+        .logo {
+            text-align: right;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .logo-circle {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 8px;
+            position: relative;
+        }
+        
+        .logo-circle:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: #2E3F50;
+            border-radius: 50%;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .tab {
+            margin-right: 15px;
+            padding-bottom: 5px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        .tab.active {
+            opacity: 1;
+            border-bottom: 2px solid white;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            font-size: 14px;
+        }
+        
+        input:focus {
+            outline: none;
+            border-bottom: 1px solid white;
+        }
+        
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .terms {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .terms input {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .terms a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .terms a:hover {
+            text-decoration: underline;
+        }
+        
+        .signup-btn {
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .signup-btn:hover {
+            background-color: #18a449;
+        }
+        
+        #status-message {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #ff4b4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-panel">
+            <h1>Smart Parcel Sorting.</h1>
+            <h2>Made Effortless</h2>
+            
+            <div class="price">
+                For Free!  <span class="monthly">(for now)</span>
             </div>
+            
+            <ul>
+                <li>🔍 Real-time OCR for parcel addresses</li>
+                <li>🚚 Automated sorting via conveyor logic</li>
+                <li>☁️ Cloud-integrated with PostgreSQL</li>
+                <li>⚡ Fast processing</li>
+                <li>📶 Works offline or online</li>
+                <li>🔒 Secure & customizable</li>
+            </ul>
+            
+            <div class="trial-text">Start your journey with us!</div>
+            <div class="family-text">Ideal for courier hubs, drop-off centers, and smart lockers.</div>
 
-            <button class="refresh-btn" onclick="window.location.reload()">Refresh Results</button>
-
-            <h2>Recent OCR Results</h2>
-            <div class="results" id="results-container">
-                {% if results %}
-                    {% for result in results %}
-                        <div class="result-card">
-                            {# Construct URL for uploaded image #}
-                            {% set image_url = '/uploads/' + result.image_path %}
-                            <img class="result-image" src="{{ image_url }}" alt="OCR Image">
-                            {# Use <pre> for preserving whitespace/newlines from OCR #}
-                            <div class="result-text"><pre>{{ result.text }}</pre></div>
-                            <div class="result-info">
-                                ID: {{ result.id }} | Date: {{ result.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}
-                            </div>
-                        </div>
-                    {% endfor %}
-                {% else %}
-                    <div class="empty-message">No OCR results found.</div>
-                {% endif %}
-            </div>
         </div>
-    </body>
-    </html>
+        
+        <div class="form-panel">
+            <div class="logo">
+                <div class="logo-circle"></div>
+             SORT IT
+            </div>
+            
+            <h2>Login to your account</h2>
+            
+            {% if get_flashed_messages() %}
+                <div class="flash-message">
+                    {{ get_flashed_messages()[0] }}
+                </div>
+            {% endif %}
+            
+            <form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="signup-btn">Log In</button>
+                <div id="status-message"></div>
+            </form>
+        </div>
+    </div>
+
     
+</body>
+</html>
